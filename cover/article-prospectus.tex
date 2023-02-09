@@ -1,0 +1,53 @@
+
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{eso-pic}
+
+\usepackage{rotating}
+\usepackage{setspace}
+
+
+\begin{document}
+
+\begin{center}
+
+\vspace*{1cm}
+
+\begin{figure}
+  \raggedleft
+  \begin{minipage}{4cm}
+  
+  \end{minipage}
+\end{figure}
+
+\vspace*{2cm}
+
+\vspace*{0.1in}
+\AddToShipoutPictureBG*{\AtPageLowerLeft{% 
+  \color{lightgray}\rule{.26 \paperwidth}{\paperheight} }
+   \:
+   \:
+   \;
+   \;
+   \:
+  \begin{turn}{90} 
+   \fontsize{90}{80}\selectfont \textbf{ \color{white} Étoile et toi}
+  \end{turn}
+}
+
+\begin{spacing}{1.7}
+\begin{tabular}{p{4cm} ll}
+  & \textbf{\Huge Et Moi} \\ 
+  & \Large Le monde est vous, vous êtes le monde \\ 
+  & \\
+  & \large Tout ce que je vois, tout ce que je ressens  \\ 
+  & \large tu es mon univers \\
+  & \\
+\end{tabular}
+\end{spacing}
+
+\end{center}
+
+\end{document}
