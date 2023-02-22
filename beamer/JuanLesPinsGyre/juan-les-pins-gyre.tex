@@ -1,0 +1,165 @@
+\documentclass{beamer} %Information to be included in the title page: 
+\usepackage[UTF8]{ctex}
+\usepackage[CJK]{ruby}
+% \usepackage{enumitem}
+\usepackage{hyperref}
+\usetheme{JuanLesPins}
+\usecolortheme{default}
+\usefonttheme{serif}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{accsupp}
+\usepackage{mathtools}
+
+\usepackage{ragged2e}
+\justifying\let\raggedright\justifying
+\usepackage{xpatch}
+\xpatchcmd{\itemize}{\raggedright}{\justifying}{}{}
+
+\newcommand\emptyaccsupp[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+
+\newfontfamily\marcellus{[Marcellus-SC.ttf]}
+
+\newcommand\deepgreen{\color[RGB]{6, 154, 116}}
+\newcommand\linkpink{\sf\color[RGB]{212, 128, 170}}
+\newcommand\cref[2]{\href{#1}{\linkpink #2}}
+
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+
+\newcommand{\uphref}[2]{\textsuperscript{\hyperlink{#1}{\linkpink #2}}}
+
+\newcommand{\decoratetext}[1]{\marcellus $\sim$\;\S\quad\underline{#1}\quad\S\;$\sim$}
+
+\setlength{\parindent}{2em}
+
+\lstset{
+  basicstyle=\bf,
+  % numbers=left,
+  % numberstyle=\emptyaccsupp\scriptsize\color{gray},
+  % keywordstyle=\color[RGB]{137,89,168},
+  % identifierstyle=\color[RGB]{77,77,77},
+  % commentstyle=\color{gray},
+  xleftmargin=4em,
+  showstringspaces=false,
+  upquote,
+  columns=flexible,
+  breaklines,
+}
+
+% \setbeamertemplate{bibliography item}[text]
+
+\usepackage[libertine, vvarbb]{newtxmath}
+\usepackage{tgpagella}
+\setromanfont{TeX Gyre Pagella}
+
+
+
+\title[Lorem ipsum dolor sit ame]{Lorem ipsum dolor sit ame consectetur IUTT}
+
+\subtitle{(praesent finibus enim at mole)}
+           
+\author % (optional, for multiple authors)
+{kokic\inst{1}}
+
+\institute[BJYPC] % (optional)
+{
+  \inst{1}%
+  Information Science and Technology \\
+  Unknown University
+}
+
+\date[presentation] % (optional)
+{\today}
+
+
+
+\begin{document} 
+
+\frame{\titlepage}
+
+\section{Genesis}
+\begin{frame}\begin{center}
+{\LARGE\decoratetext{Genesis}}
+\vspace{1em}
+
+Curabitur fermentum, eros eget cursus aliquam 2023 ...
+
+\end{center}\end{frame}
+
+
+
+\begin{frame}{Status Quo}
+
+\noindent Nulla sodales tellus urna, vel tincidunt ipsum efficitur ac. Praesent fermentum sit amet velit at auctor. Curabitur in volutpat ipsum, ut tempus arcu. Fusce scelerisque molestie ex, eget susc.
+
+Quisque susc, nunc sit amet luctus commodo. Fusce neque lorem, ultricies sit amet urna a, aliquam gravida ipsum. Sed laoreet juston.
+
+\end{frame}
+
+
+\section{Metamorphosis}
+\begin{frame}\begin{center}
+{\LARGE\decoratetext{Metamorphosis}}
+\vspace{1em}
+
+Suspendisse eleifend tincidunt interdum. Donec in tincidunt velit, Nam fa.
+\end{center}\end{frame}
+
+
+
+
+\begin{frame}{Otaku or Geek}
+
+\noindent Aenean varius massa et magna commodo, eleifend placerat urna porttitor. Quisque blandit, erat vestibulum pharetra finibus, tortor est luctus justole.
+
+Donec ut condimentum orci. Donec sit amet risus vel felis tristique viverra "otaku / geek life" i.e. $\underline{\text{necide era felis}}$, vestibulum lu $\underline{\text{ctus fac nec, semper}}$ vel $\underline{\text{aliquam quis conv}}$.
+
+\end{frame}
+
+\begin{frame}{Activities}
+Vivamus pretium quis metus sed pharetra. Nullam eget ligula molestie, gravida lorem quis, luctus augue. rhoncus pulvinar posuere. Donec tempus nulla vel ligula gravida, lacus aliqua.
+
+\begin{center}
+$\overline{\hspace{8em}}$
+\end{center}
+
+$\mathcal{A}_1$ \; {\bf Intege}. $\leadsto$ 
+Integer ac semper nisi. Pellentesque auctor eleifend vehicula. Vestibulum fermentum massa quis facilisis scelerisque. Fusce congue conse.
+
+\vspace{0.5em}
+
+$\mathcal{A}_2$ \; {\bf Vestibulum ante ipsu}. $\leadsto$ 
+Aenean tempus dictum nisi, eget consectetur ligula viverra non. Donec pulvinar rhoncus lorem, vel tincidunt leo pretium sit amet. Phasellus accumsan erat vel tellus risus ac feugiat placerat. Suspendisse massa quam, malesuada sed tempor eros non lorem iaculis, sed volupat odiit...
+
+\end{frame}
+
+
+\begin{frame}
+
+$\mathcal{A}_3$ \; {\bf Donec in Odi}. $\leadsto$ 
+Pellentesque ultrices velit lacus, a eleifend magna accumsan non. Morbi leo felis, cursus eget diam in, suscipit mollis diam. Donec quis tortor ante mobi.
+
+\vspace{0.5em}
+
+$\mathcal{A}_4$ \; {\bf Orciu aliquam}. $\leadsto$ 
+Praesent cursus tellus non neque aliquet aliquet. Curabitur pretium gravida blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada velit in urna vestibulum, non suscipit mi scelerisque. Ut viverra purus feugu.
+
+\end{frame}
+
+
+\section{Epilogue}
+\begin{frame}\begin{center}
+\LARGE\decoratetext{Epilogue}
+\end{center}\end{frame}
+
+\begin{frame}[fragile]
+\begin{center}
+{\Huge\bf Thanks!}
+\end{center}
+\end{frame}
+
+\end{document}
+
+
+
+
